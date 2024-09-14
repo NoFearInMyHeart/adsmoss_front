@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "AdsMoss-PC-Prod",
+      "script": "next",
+      "args": "start --port 8081",
+      "exec_mode": "cluster_mode",
+      "instances": "max",
+      "merge_logs": true,
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
